@@ -4,10 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script type="text/javascript" src="main.js"></script>
+    <title>DUVAN VIVAS</title>
+<script type="text/javascript"> 
+    function nombre(){
+        var cam1, cam2,totalcam;
+
+        cam1 = prompt('ingrese el precio de la camisa 1  ');
+        cam2 = prompt('ingrese el precio de la camisa 2 ');
+        if (parseInt (cam1) > parseInt(cam2) ) {
+            totalcam = (parseInt(cam1) + (parseInt(cam2) /2))
+            alert('el total a pagar es'+totalcam)
+        }
+        else{
+            totalcam = (parseInt(cam2) + (parseInt(cam1) /2))
+            alert('el total a pagar es'+totalcam)
+         
+        }
+    }
+</script>
 </head>
+
 <body>
-     <h1>Duvan Vivas Bermudez</h1>
+    <div>
+        <button onclick="nombre()">insertar</button>
+
+
+    </div>
 </body>
 </html>
