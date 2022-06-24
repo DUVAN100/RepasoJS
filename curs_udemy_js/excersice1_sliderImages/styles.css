@@ -1,0 +1,20 @@
+#slider-container{
+    width: 1800px;
+}
+.btn{
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color: #150af7; /* Green */
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+.item{
+    display: none;
+}
+#slider-container .item-active{
+    display: block;
+}
