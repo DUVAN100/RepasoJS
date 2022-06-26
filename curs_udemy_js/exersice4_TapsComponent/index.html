@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acordeon</title>
+
+    <style>
+        body{
+            font-family: Arial,Helvetica, sans-serif;
+            background-color: rgb(163, 163, 163);
+        }
+        
+        #tabs-container{
+            background-color: rgb(140, 140, 238);
+            width: 500px;
+            margin: 100px auto;
+            border: solid 1px rgb(53, 68, 74);
+        }
+        #tabs-container .tabs{
+            display: flex;
+            background-color: #ccc;        }
+        #tabs-container .tabs .tab,
+        #tabs-container .tabs .tab button{
+            width: 100%;
+            
+        }
+
+        #tabs-container .tabs .tab button{
+            background-color: transparent;
+            border: none;
+            padding: 10px 0;
+            cursor: pointer;
+        }
+
+
+        #tabs-container .tabs-containers .content{
+            padding: 10px;
+            display: none;
+        }
+
+        #tabs-container .tabs .tab.active-tab{
+            background-color: white !important;
+        }
+    </style>
+</head>
+<body>
+    <div id="tabs-container">
+        <div class="tabs">
+            <div class="tab"><button>AJAX</button></div>
+            <div class="tab"><button>XML</button></div>
+            <div class="tab"><button>FETCH</button></div>
+        </div>
+
+        <div class="tabs-containers">
+            <div class="content">es una técnica de desarrollo para crear aplicaciones web asíncronas. Estas aplicaciones se ejecutan en el cliente, es decir, en el navegador de los usuarios mientras se mantiene la comunicación asíncrona con el servidor en segundo plano.</div>
+            <div class="content">, es un metalenguaje que permite definir lenguajes de marcas desarrollado por el World Wide Web</div>
+            <div class="content">La API Fetch proporciona una interfaz JavaScript para acceder y manipular partes del canal HTTP, tales como peticiones y respuestas. También provee un método global fetch() (en-US) que proporciona una forma fácil y lógica de obtener recursos de forma asíncrona por la red.</div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
