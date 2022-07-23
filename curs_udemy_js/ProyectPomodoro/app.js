@@ -18,7 +18,7 @@ const taskName = document.querySelector('#time #taskName');
 renderTime();
 renderTasks();
 ///EVENTOS
-form.addEventListener('submit', e =>{
+form. ('submit', e =>{
     //con esto anulamos el envio del formulario
     e.preventDefault();
     if (itTask.value != '' ) {

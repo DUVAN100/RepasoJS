@@ -33,7 +33,6 @@ app.get('/delete-board/:id', (req, res) => {
     data = JSON.parse(data);
     const index = data.boards.findIndex(board => board.id == id);
     data.boards.splice(index,1);
-
     fs.writeFileSync(fullPath, JSON.stringify(data), null, '\t');
     res.json(createResponse(true, 'Boards deleted successfully'));
 });
