@@ -11,21 +11,21 @@ export default class Card {
         const id = `card--${this.id}`;
         const dataId = `dataid="${id}"`;
         return `<div class="card" id="${id} data-boardid="board--${board.id}" draggable="true">
-                   <div class="card-wrapper">
-                        <div class="title">
-    
+                   <div class="card-wrapper" ${dataId}>
+                        <div class="title" ${dataId}>
+                        ${this.title}
                         </div>
-                        <div class="options">
-                            <button class="more-options"></button>
+                        <div class="options" ${dataId}>
+                            <button class="more-options" ${dataId}>...</button>
                             <div class="submenu">
                                 <ul>
-                                    <li><a href="#" class="card-submenu-edit">editar</a></li>
-                                    <li><a href="#" class="card-submenu-delete">eliminar</a></li>
+                                    <li><a href="#" class="card-submenu-edit" ${dataId} data-index="${index}" data-board-index="${boardIndex}" >editar</a></li>
+                                    <li><a href="#" class="card-submenu-delete" ${dataId} data-index="${index}" data-board-index="${boardIndex}">eliminar</a></li>
                                 </ul>
                             </div>
                         </div>  
                     </div>
-                    <div class="placeholder"></div>
+                    <div class="placeholder" data-id="${id}" id="${generateId()}"></div>
                 </div>`;
     }
 

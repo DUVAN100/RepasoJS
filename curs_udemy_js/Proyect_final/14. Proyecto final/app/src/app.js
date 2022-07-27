@@ -18,3 +18,41 @@ kanban.add(board01);
 kanban.add(board02); 
 kanban.add(board03);
 console.log(kanban);
+//!references
+const container= document.querySelector('#container');
+const  newBoardButton = documen.querySelector('#new-board-button');
+
+newBoardButton.addEvenListener('click', addBoard)
+renderUI();
+function renderUI(){
+    const boardsHTML = kanban.boards.map((board, boardIndex)=>{
+        const cardsHTML = board.items.map((card,index)=>{
+            return card.getHTML(board, boardIndex, index)
+        })
+        return board.getHTML(boardIndex, cardsHTML);
+    });
+    container.innerHTML = boardsHTML.join('');
+    enableNewCard();
+
+}
+
+function addBoard(e){
+    const name = prompt('name of the board')
+    if(name){
+        const board = new Board(name, []);
+        kanban.add(board)
+        renderUI();
+    }
+  function enableNewCard(){
+    document.querySelector('.form-new').array.forEach(form => {
+        form.addEvenListener('submit', e=>{
+            e.preventDefault();
+            const text = fomr.querySelector('.text').value;
+            const card = new Card(text);
+            const indexBoard = form.querySelector('.index-board').value;
+            kanban.addCard(card, indexBoard);
+            renderUI();
+        })
+    });
+  }
+}
