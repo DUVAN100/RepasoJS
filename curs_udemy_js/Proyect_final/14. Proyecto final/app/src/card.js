@@ -6,6 +6,15 @@ export default class Card {
         this.title = title;
         this.id = generateId();
     }
+
+    //?vamos a crear un metodo que va a regresar el html de la tageta
+    //?vamos a crear un metodo que va a regresar el html de la tageta
+    //?vamos a crear un metodo que va a regresar el html de la tageta
+
+
+
+
+
     //?vamos a crear un metodo que va a regresar el html de la tageta
     getHTML(board, boardIndex, index){
         const id = `card--${this.id}`;
