@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="w3.css">
+    <title>CRUD in JAVASCRIPT</title>
+</head>
+<body>
+    <div class="w3-container w3_blue">
+        <h1>CRUD in javascrit</h1>
+    </div>
+    <form action="" class="w3-container" onsubmit="event.preventDefault()">
+    <input class="w3-input" id="fname" name="fname" placeholder="Nombre">
+    <input class="w3-input" id="Iname" name="Iname" placeholder="Apellido">
+    <button class="w3-button w3-round w3-yellow" onclick="clearform()">limpiar Formulario</button>
+    <br><br>
+    <button class="w3-button w3-round w3-blue" onclick="create()">Create</button>
+    <button class="w3-button w3-round w3-blue" onclick="update()">update</button>
+    <button class="w3-button w3-round w3-blue" onclick="deleteItem()">Delete</button>
+    <br><br>
+    <select name="" onclick="panelClick()" size="20" id="panel"></select>
+</form>
+</body>
+<script src="app.js"></script>
+</html>
