@@ -1,0 +1,18 @@
+li{
+    transition: 0,1s;
+    color: blue;
+    position: relative;
+}
+li:hover{
+    scale: 1.5 1.3;
+    color: aqua;
+    z-index: 3;
+    text-shadow: 0 0 20px white;
+}
+li:has(+ li:hover),
+li:hover + li{
+    scale: 1.4 1.2;
+    color: aqua;
+    z-index: 2;
+}
+li:has(+li +li + li:hover)

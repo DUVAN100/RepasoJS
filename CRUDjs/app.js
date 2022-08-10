@@ -1,9 +1,6 @@
 let el, i;
 let data = [
-    {firstname: "mauricio", lastname: "sevilla"},
-    {firstname: "gorge", lastname: "baron"},
-    {firstname: "maria", lastname: "posada"},
-    {firstname: "leticia", lastname: "marin"}
+    
 ];
 let panel = document.querySelector("#panel");
 
