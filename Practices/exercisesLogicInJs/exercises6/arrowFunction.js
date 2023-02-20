@@ -1,9 +1,9 @@
 let count = 0;
+let age = 0
 let ageSee = 0;
-let age = 0;
 const ages = [];
 let ageOlder = 0;
-function generateAges(ageOlder){
+const generateAges = (age)=>{
     for (let index = 0; index < 20; index++) {
         value =getRandomIntInclusive(1,100)
         ages.push(value);
@@ -13,9 +13,13 @@ function generateAges(ageOlder){
         if(element > ageOlder){
             ageOlder = element
         }
-    });    
+    });
+    return(`The age older is ${ageOlder}`)
+
+
 }
-console.log(generateAges(ageOlder));
+console.log(generateAges(age));
+
 function getRandomIntInclusive(ageMin, ageMax) {
     ageMin = Math.ceil(ageMin);
     ageMax = Math.floor(ageMax);
